@@ -1,0 +1,78 @@
+<!doctype HTML>
+<html lang="fr">
+	<head>
+		<title>Ma page</title>
+		<meta charset="UTF-8">
+		<meta name="author" content="Tom Gosselin">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="darkmode-style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+	</head>
+	<body>
+        <header class="justify-header" class="border-bottom-changer">
+            <section class="name">
+                <h1>Tom Gosselin</h1>
+            </section>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <section id="nav-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </section>
+        </header>
+        <section id="nav-menu">
+            <a href="">Mon CV</a>
+            <a href="">Mes créations</a>
+            <a href="">Me contacter</a>
+        </section>
+        <section class="content">
+            <p id="lorem">Sur cette page, j'ai essayé d'utiliser Jquery afin d'afficher un mode sombre
+            lorsque l'utilisateur clique sur le bouton dedié a cet effet. La couleur de fond devient alors sombre
+                et la police d'ecriture devient claire.<br> Si vous cliquez sur mon nom ci-dessus, vous avez la possibilité
+            de faire disparaitre ce texte, mais chut, ne le dites à personne...</p>
+            <section class="cv">
+                <ul>
+                    <li>Experience 1</li>
+                    <li>Experience 1</li>
+                    <li>Experience 1</li>
+                    <li>Experience 1</li>
+                </ul>
+            </section>
+        </section>
+        <section class="popup">
+            <p>This website uses cookies to ensure you get the best experience on our website.</p>
+            <section class="popup-button"><a href="">Got it !</a></section>
+        </section>
+    </body>
+	<script>
+		$(document).ready(function(){
+            var name = $(".name");
+            var lorem = $("#lorem");
+  			name.click(function(){
+   		 		lorem.slideToggle(300);
+  			});
+        });
+        $(document).ready(function(){
+            var body = $("body");
+            var header = $("header");
+            var input_switch = $(".switch input");
+  			input_switch.click(function(){
+                var body = $("body");
+                var header = $("header");
+                body.toggleClass("darkmode");
+                header.toggleClass("border-bottom-changer");
+            });
+        });
+        $(document).ready(function(){
+            $('#nav-icon').click(function(){
+                $(this).toggleClass('open');
+                $("#nav-menu").slideToggle(300);
+        });
+        });
+	</script>
+</html>
