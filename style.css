@@ -1,0 +1,203 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif; 
+    color: #212121 !!important;
+    line-height: 25px;
+/*    background-image: linear-gradient(0deg, #f5eff5 0%, #dee5e6 100%);*/
+}
+.darkmode{
+    background-color: #212121!important;
+    color: #fff;
+    background-image: none;
+}
+
+.darkmode #nav-menu{
+        border-bottom: 1px solid #fff;
+}
+.darkmode #nav-menu a{
+    color: #fff;
+}
+.darkmode .menu-button span{
+    background-color: #fff;
+}
+.darkmode #nav-icon span{
+    background-color: #fff;
+}
+#click{
+    background-color: red;
+    width: 120px;
+    text-align: center;
+    border: 1px solid #212121;
+}
+#click:hover{
+    cursor: pointer;
+    background-color: blue;
+}
+header{
+    height: 80px;
+    display: flex;
+/*    background-color: #0093E9;*/
+/*    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);*/
+    justify-content: center;
+    border-bottom: 1px solid #212121;
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+}
+.border-bottom-changer{
+    border-bottom: 1px solid #fff;
+}
+.justify-header{
+    justify-content: space-between;
+}
+header .name{
+    margin: auto;
+}
+header h1{
+    height: 80px;
+    line-height: 80px;
+    margin: 0;
+}
+header h1:hover{
+    cursor: pointer;
+}
+#nav-icon {
+  width: 40px;
+  height: 55px;
+  position: relative;
+  margin: auto;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+#nav-icon span {
+    display: flex;
+    height: 2px;
+    background: #212121;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(
+0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(
+0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+    margin: 0px;
+    flex-direction: column;
+    margin-top: 12px;
+}
+#nav-icon {
+}
+#nav-icon span:nth-child(1) {
+  top: 0px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+    width: 35px;
+}
+
+#nav-icon span:nth-child(2) {
+  top: 18px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+    width: 35px;
+}
+#nav-icon span:nth-child(3) {
+  top: 36px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+    width: 35px;
+}
+#nav-icon.open span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: -3px;
+  left: 8px;
+  width: 40px;
+}
+#nav-icon.open span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+#nav-icon.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 39px;
+  left: 8px;
+  width: 40px;
+}
+#nav-menu{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    border-bottom: 1px solid #212121;
+}
+#nav-menu a{
+    margin: auto;
+    text-decoration: none;
+    color: #212121;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+}
+#nav-menu a:hover{
+    text-decoration: underline;
+}
+.content{
+    max-width: 1000px;
+    margin: auto;
+    padding: 1em;
+}
+#lorem{
+    text-align: justify;
+    margin: 0;
+}
+.cv{
+    display: flex;
+    justify-content: center;
+}
+.cv ul li{
+    list-style: none;
+    padding: 1em;
+}
+.popup{
+    position: fixed;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+    bottom: 1em;
+    right: 1em;
+    left: 1em;
+    border-radius: 10px;
+    border: 1px solid #212121;
+}
+.popup p{
+    margin: 0;
+    padding: 1em;
+    text-align: justify;
+}
+.popup-button{
+    text-align: center;
+    border: 1px solid;
+    margin: 1em;
+    border-radius: 10px;
+}
